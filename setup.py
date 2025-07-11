@@ -9,7 +9,7 @@ except FileNotFoundError:
 
 setup(
     name="frago",  
-    version="0.1.0",
+    version="0.1.3",
     packages=find_packages(),
     license="MIT",
     include_package_data=True,

@@ -31,11 +31,10 @@ Add frago to your Django INSTALLED_APPS:
 
 Finally, run the following commands to create and apply the migrations:
 
-```bash
     python manage.py makemigrations frago
     
     python manage.py migrate
-```
+    
 ```
 ## ⚙️ Configuration (optional) 
 ```bash
