@@ -31,10 +31,10 @@ Add frago to your Django INSTALLED_APPS:
 
 Finally, run the following commands to create and apply the migrations:
 
+```bash
     python manage.py makemigrations frago
     
     python manage.py migrate
-
 ```
 ## ⚙️ Configuration (optional) 
 ```bash
@@ -97,7 +97,7 @@ CHUNKED_UPLOADER_UPLOAD_MODEL = "frago.ChunkUpload"
 
         Headers:
             Content-Range: bytes 0-1048575/104857600
-            
+
         Body: multipart/form-data with key file and binary chunk data.
 ```    
     3. Finalize upload
