@@ -36,6 +36,7 @@ Finally, run the following commands to create and apply the migrations:
     
     python manage.py migrate
 ```
+```
 ## ⚙️ Configuration (optional) 
 ```bash
 you can confic these in settings.py
