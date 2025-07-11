@@ -31,40 +31,40 @@ Add frago to your Django INSTALLED_APPS:
 
 ```
 ## ⚙️ Configuration
-# 🧠 How the uploader identifies the upload session
+## 🧠 How the uploader identifies the upload session
 CHUNKED_UPLOADER_IDENTIFIER_MODE = "user"
-# Options: "anonymous" (default), "user"
-# You can override get_identifier() for custom logic.
+ Options: "anonymous" (default), "user"
+ You can override get_identifier() for custom logic.
 
-# 📂 Where uploaded chunks are stored temporarily
+## 📂 Where uploaded chunks are stored temporarily
 CHUNKED_UPLOADER_CHUNK_UPLOAD_PATH = "chunked_uploads/"
 
-# 📂 Where final assembled files go
+## 📂 Where final assembled files go
 CHUNKED_UPLOADER_ASSEMBLED_PATH = "assembled_videos/"
 
-# 🔐 Hash type for file integrity checks
+## 🔐 Hash type for file integrity checks
 CHUNKED_UPLOADER_CHECKSUM_TYPE = "md5"
-# Any hashlib-supported algorithm (e.g., "sha256")
+ Any hashlib-supported algorithm (e.g., "sha256")
 
-# ✅ Whether to perform checksum verification
+## ✅ Whether to perform checksum verification
 CHUNKED_UPLOADER_DO_CHECKSUM = True
 
-# ⏱️ Chunk expiration time (used for cleanup jobs)
+## ⏱️ Chunk expiration time (used for cleanup jobs)
 CHUNKED_UPLOADER_EXPIRATION = timedelta(days=1)
 
-# 📦 Read buffer size during assembly
+## 📦 Read buffer size during assembly
 CHUNKED_UPLOADER_ASSEMBLE_READ_SIZE = 8 * 1024 * 1024  # 8MB
 
-# 🧱 Custom chunk model path (if overriding)
+## 🧱 Custom chunk model path (if overriding)
 CHUNKED_UPLOADER_CHUNK_MODEL = "frago.ChunkedUploadChunk"
 
-# 🧩 Custom upload model path (if overriding)
+## 🧩 Custom upload model path (if overriding)
 CHUNKED_UPLOADER_UPLOAD_MODEL = "frago.ChunkUpload"
 
 
 ## 🧩 API Usage
     1. Start a new upload
-    
+
 ```bash
         POST /upload/
         Request:
