@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "frago"
+version = "0.1.0"
+description = "Reusable Django app for resumable parallel chunked file uploads"
+authors = [
+    { name = "Albin Mathew", email = "albinm970@gmail.com" }
+]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "Django>=3.2",
+    "djangorestframework>=3.12"
+]
+
+[project.scripts]
+frago = "frago.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/yourusername/frago"

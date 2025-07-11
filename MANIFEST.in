@@ -1,0 +1,9 @@
+# Include the README
+include README.md
+
+# Include all files in these folders recursively
+recursive-include frago/migrations *
+
+# Optional: include JSON, YAML, or other config/data files
+recursive-include frago *.json
+recursive-include frago *.yml
