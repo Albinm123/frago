@@ -9,7 +9,7 @@ except FileNotFoundError:
 
 setup(
     name="frago",  
-    version="0.1.3",
+    version="0.1.4",
     packages=find_packages(),
     license="MIT",
     include_package_data=True,
@@ -20,7 +20,7 @@ setup(
     author="Albin Mathew",
     author_email="albinm970@gmail.com", 
 
-    url="https://github.com/yourname/chunked-uploader",
+    url="https://github.com/Albinm123/frago",
 
     install_requires=[
         "Django>=3.2",

@@ -261,6 +261,11 @@ and specify the identifier field in the view
 
 
 
+## 🔗 Uploader Client
+
+Use the official uploader client:  
+👉 [frago-client](https://github.com/Albinm123/frago-client.git)
+
 
 
 ## 📄 License
